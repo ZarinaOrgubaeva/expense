@@ -1,0 +1,38 @@
+.container2 {
+  display: flex;
+  width: 46rem;
+  height: 6, 5rem;
+  background: #4b4b4b;
+  border-radius: 12px;
+  color: white;
+  margin-top: 5rem;
+  border: 2px solid black;
+  margin-left: -1rem;
+}
+.container2 > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+ h3 {    
+  width: 112px;
+  height: 44px;
+  background: #40005d;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+.expensesDate {
+  width: 82.11px;
+  height: 80px;
+  background: #2a2a2a;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.expensesDate {
+  font-size: 8px;
+}
