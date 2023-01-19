@@ -1,6 +1,16 @@
-import "./Chart.css";
 import ChartBar from "./ChartBar";
-const Chart = ({ items }) => {
+import styled from "styled-components";
+const getTheme = (props) => {
+  let theme = "indigo";
+  if (props.theme === "green") {
+    theme = "green";
+  }
+  if (props.theme === "red") {
+    theme = "red";
+  }
+  return theme;
+};
+const Chart = ({ items, theme }) => {
   const maximumPrice = 3000;
   const months = [
     {
@@ -52,12 +62,13 @@ const Chart = ({ items }) => {
       currentPrice: 0,
     },
   ];
+
   items.forEach((item) => {
     const monthsNumber = item.date.getMonth();
     months[monthsNumber].currentPrice += item.price;
   });
   return (
-    <div className="chart">
+    <Container theme={theme}>
       {months.map((item) => {
         return (
           <ChartBar
@@ -68,7 +79,18 @@ const Chart = ({ items }) => {
           />
         );
       })}
-    </div>
+    </Container>
   );
 };
 export default Chart;
+
+//style
+const Container = styled.div`
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: ${getTheme};
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+`;

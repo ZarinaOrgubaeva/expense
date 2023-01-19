@@ -1,7 +1,26 @@
 import { useState } from "react";
-import { Button } from "../UI/button/Button";
 import { FormInput } from "../UI/formInput/FormInput";
-import "./ExpensesForm.css";
+import styled from "styled-components"
+const CanselButton = styled.button`
+   width: 228px;
+    height: 51px;
+    background: #4A026B;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15rem;
+`
+const SaveButton = styled.button`
+   width: 228px;
+    height: 51px;
+    background: #4A026B;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+`
 export const ExpensesForm = (props) => {
   const [title, setTitle] = useState();
   const [price, setPrice] = useState();
@@ -64,8 +83,8 @@ export const ExpensesForm = (props) => {
         value={date}
         onChange={dateInput}
       />
-      <Button title="Отмена" onClick={cancelHandler} />
-      <Button title="Сохранить" onClick={saveHandler} />
+      <CanselButton title="Отмена" onClick={cancelHandler}>Отмена</CanselButton>
+      <SaveButton title="Сохранить" onClick={saveHandler}>Сохранить</SaveButton>
     </form>
   );
 };
