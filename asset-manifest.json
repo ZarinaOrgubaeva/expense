@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ZarinaOrgubaeva/expense/static/css/main.9f088a99.css",
+    "main.js": "/ZarinaOrgubaeva/expense/static/js/main.26ffa26f.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ZarinaOrgubaeva/expense/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/ZarinaOrgubaeva/expense/index.html",
+    "main.9f088a99.css.map": "/ZarinaOrgubaeva/expense/static/css/main.9f088a99.css.map",
+    "main.26ffa26f.js.map": "/ZarinaOrgubaeva/expense/static/js/main.26ffa26f.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ZarinaOrgubaeva/expense/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f088a99.css",
+    "static/js/main.26ffa26f.js"
+  ]
+}
